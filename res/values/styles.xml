@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="SeperatorTextView" parent="AppTheme">
+        <item name="android:background">@color/grey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/list_textview</item>
+        <item name="android:paddingTop">@dimen/layout_padding</item>
+        <item name="android:paddingBottom">@dimen/layout_padding</item>
+        <item name="android:layout_marginBottom">@dimen/outer_margin</item>
+        <item name="android:layout_marginTop">@dimen/outer_margin</item>
+        <item name="android:paddingLeft">@dimen/layout_padding</item>
+    </style>
+
+    <!-- the theme applied to the application or activity
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+ -->
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/white</item>
+    </style>
+    
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/CustomActionBarTheme.ActionBar</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
+    </style>
+
+    <style name="CustomActionBarTheme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextStyle">@style/CustomActionBarTheme.ActionBar.Text</item>
+    </style>
+
+    <style name="CustomActionBarTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+</resources>

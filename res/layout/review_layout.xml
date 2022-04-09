@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/curved_bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/outer_margin"
+    android:paddingLeft="@dimen/outer_margin"
+    android:paddingRight="@dimen/outer_margin"
+    android:paddingTop="@dimen/layout_padding" >
+
+    <EditText
+        android:id="@+id/edt_review_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:ems="10"
+        android:hint="@string/add_title"
+        android:textSize="@dimen/list_hotel_title" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_review_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/add_comment"
+        android:inputType="textMultiLine" >
+    </EditText>
+
+    <RatingBar
+        android:id="@+id/ratingbar_review"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.50" />
+
+    <Button
+        android:id="@+id/btn_post_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/button_bg"
+        android:text="Post" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="whisky_light">#e46906</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#aaaaaa</color>
+    <color name="lt_grey">#E6E6E6</color>
+    <color name="drk_grey">#909090</color>
+    <color name="drk_yellow">#7a4012</color>
+    <color name="lt_yellow">#d4a539</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="start_backgorund">#ff7a01</color>
+
+</resources>

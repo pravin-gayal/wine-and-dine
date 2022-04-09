@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="hotel_icon_width">50dp</dimen>
+    <dimen name="hotel_icon_height">60dp</dimen>
+    <dimen name="layout_padding">5dp</dimen>
+    <dimen name="textview_padding">3dp</dimen>
+    <dimen name="list_hotel_title">20dp</dimen>
+    <dimen name="list_textview">15dp</dimen>
+    <dimen name="outer_margin">10dp</dimen>
+    <dimen name="icon_category_width">100dp</dimen>
+    <dimen name="icon_category_height">100dp</dimen>
+    <dimen name="txt_hotel_title">25dp</dimen>
+    <dimen name="btn_width">100dp</dimen>
+    <dimen name="btn_height">30dp</dimen>
+    <dimen name="icon_contact_size">20dp</dimen>
+    <dimen name="icon_search_size">35dp</dimen>
+
+</resources>

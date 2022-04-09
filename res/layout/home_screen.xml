@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lt_grey"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/home_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/btn_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/outer_margin"
+                android:layout_marginRight="@dimen/outer_margin"
+                android:layout_marginTop="@dimen/outer_margin"
+                android:background="@drawable/category_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon_search_size"
+                    android:layout_height="@dimen/icon_search_size"
+                    android:padding="@dimen/layout_padding"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/search_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_padding"
+                    android:text="@string/search"
+                    android:textSize="@dimen/list_hotel_title" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SeperatorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categories" />
+
+            <com.quandisa.nintyml.activity.CustomGridView
+                android:id="@+id/grid_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/outer_margin"
+                android:layout_marginRight="@dimen/outer_margin"
+                android:clipToPadding="false"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/layout_padding"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/layout_padding"
+                tools:listitem="@layout/category_view" />
+
+            <TextView
+                style="@style/SeperatorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recommended" />
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/search_result_view" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/no_connection_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/outer_margin"
+                    android:layout_marginTop="@dimen/outer_margin"
+                    android:text="@string/no_connection"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/list_textview" />
+
+                <Button
+                    android:id="@+id/retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/outer_margin"
+                    android:background="@drawable/category_bg"
+                    android:text="Retry" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

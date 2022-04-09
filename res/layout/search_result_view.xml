@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/outer_margin"
+    android:paddingRight="@dimen/outer_margin" >
+
+    <!-- TODO Add background -->
+
+    <RelativeLayout
+        android:layout_width="@dimen/hotel_icon_width"
+        android:layout_height="@dimen/hotel_icon_height"
+        android:layout_marginRight="25dp" >
+
+        <ImageView
+            android:id="@+id/hotel_logo"
+            android:layout_width="@dimen/hotel_icon_width"
+            android:layout_height="@dimen/hotel_icon_height" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding" >
+
+        <TextView
+            android:id="@+id/hotel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="@dimen/textview_padding"
+            android:paddingTop="@dimen/textview_padding"
+            android:textSize="@dimen/list_hotel_title" />
+
+        <TextView
+            android:id="@+id/hotel_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/hotel_name"
+            android:textSize="@dimen/list_textview" />
+
+        <RatingBar
+            android:id="@+id/hotel_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/hotel_timing"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.25" />
+    </RelativeLayout>
+
+</LinearLayout>

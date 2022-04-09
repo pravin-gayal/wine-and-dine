@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">90ml</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="recommended">Most Popular</string>
+    <string name="categories">Categories</string>
+    <string name="search_result">Search Result</string>
+    <string name="image_gallery">Image Gallery</string>
+    <string name="txt_search_result">_COUNT_ Results for _HotelName_</string>
+    <string name="description">Description</string>
+    <string name="photos">Photos</string>
+    <string name="menu">Menu</string>
+    <string name="how_to_reach">How To Reach</string>
+    <string name="reviews">Reviews</string>
+    <string name="hotel_description">Ordinarily, the system incrementally builds the back stack as the user navigates from one activity to the next. However, when the user enters your app with a deep link that starts the activity in its own task, its necessary for you to synthesize a new back stack because the activity is running in a new task without any back stack at all.For example, when a notification takes the user to an activity deep in your app hierarchy, you should add activities into your tasks back stack so that pressing Back navigates up the app hierarchy instead of exiting the app. This pattern is described further in the Navigation design guide.</string>
+    <string name="no_connection">No Connection</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="add_title">Add Title</string>
+    <string name="search">Search</string>
+
+</resources>
